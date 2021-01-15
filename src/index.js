@@ -5,9 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  React.createElement("h1",null, "zhuzhu"),
+  // where we want to put it
   document.getElementById('root')
 );
 
