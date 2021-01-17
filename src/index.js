@@ -5,9 +5,32 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  React.createElement("h1",null, "zhuzhu"),
-  // where we want to put it
-  document.getElementById('root')
+    // 1. html element
+    // React.createElement(
+    //     "h1",
+    //     {style: {color: "blue"}},
+    //     "I like"
+    // ),
+    // 2. unordered list
+    // React.createElement(
+    //     "ul",
+    //     null,
+    //     React.createElement(
+    //         "li", null, "1"
+    //     ),
+    //     React.createElement(
+    //         "li", null, "2"
+    //     )
+    // ),
+    // 3. jsx -> babel
+    // <ul>
+    //     <li>Monday</li>
+    //     <li>Tuesday</li>
+    // </ul>,
+    // 4. component
+    <App />,
+    // where we want to put it
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
