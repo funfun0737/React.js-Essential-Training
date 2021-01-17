@@ -13,8 +13,7 @@ function Main(props) {
     return(
         <section>
             <p>for {props.meal}</p>
-            <img src = {logo} height={200}/>
-            <img src ="https://github.com/eveporcello.png"/>
+            <img src = {logo} height={200} alt = "logo"/>
             <ul style={{textAlign:"left"}}>
                 {props.dishes.map((dish) => (
                     <li key={dish.id}> {dish.title}</li>))}

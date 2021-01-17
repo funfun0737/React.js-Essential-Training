@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function AppTwo(){
+    return <h1>This is the second app</h1>;
+}
+
 ReactDOM.render(
     // 1. html element
     // React.createElement(
@@ -28,7 +32,11 @@ ReactDOM.render(
     //     <li>Tuesday</li>
     // </ul>,
     // 4. component
-    <App />,
+    <React.Fragment>
+        <App />,
+        <AppTwo />,
+    </React.Fragment>,
+
     // where we want to put it
     document.getElementById('root')
 );
