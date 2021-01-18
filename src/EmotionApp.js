@@ -1,25 +1,22 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useReducer} from "react";
 
 function Secret() {
     return <h1> secret page</h1>
 }
 
 function Public() {
+    const [checked, toggle] = useReducer(
+        (checked) => !checked,
+        false
+    );
+
     const [emotion, setEmotion] = useState("happy");
 
     // takes in a call back function
     useEffect(() => {
         console.log(`it is ${emotion} around here`);
     },[emotion]);
-
-
-    const [checked, setChecked] = useState(false);
-
-    function toggle() {
-        setChecked((checked) => !checked);
-    }
-
-
+    
     return (
         <>
             <input type="checkbox" value = {checked} onChange = {toggle} />
@@ -36,9 +33,6 @@ function Public() {
         </>
     );
 }
-
-const [, , third] = ["1", "2", "3"];
-console.log(third);
 
 function EmotionApp({authorized}) {
     return (

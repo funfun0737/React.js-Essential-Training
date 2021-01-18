@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import RestaurantApp from './RestaurantApp';
 import EmotionApp from "./EmotionApp";
+import GithubApp from './GithubApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -30,7 +31,8 @@ ReactDOM.render(
     // </ul>,
     // 4. component
     // <RestaurantApp />,
-    <EmotionApp authorized = {false} />,
+    // <EmotionApp authorized = {false} />,
+    <GithubApp login = "funfun0737" />,
     // where we want to put it
     document.getElementById('root')
 );
