@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import RestaurantApp from './RestaurantApp';
+import EmotionApp from "./EmotionApp";
 import reportWebVitals from './reportWebVitals';
-
-function AppTwo(){
-    return <h1>This is the second app</h1>;
-}
 
 ReactDOM.render(
     // 1. html element
@@ -32,11 +29,8 @@ ReactDOM.render(
     //     <li>Tuesday</li>
     // </ul>,
     // 4. component
-    <React.Fragment>
-        <App />,
-        <AppTwo />,
-    </React.Fragment>,
-
+    // <RestaurantApp />,
+    <EmotionApp authorized = {false} />,
     // where we want to put it
     document.getElementById('root')
 );

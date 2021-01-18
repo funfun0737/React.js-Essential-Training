@@ -40,7 +40,7 @@ function Footer(props) {
 
 }
 // we create a component by creating a function
-function App() {
+function RestaurantApp(props) {
   return (
       <div className="App">
           <Header name = "Yuqi "/>
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default RestaurantApp;
