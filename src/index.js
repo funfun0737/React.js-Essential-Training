@@ -4,7 +4,9 @@ import './index.css';
 import RestaurantApp from './RestaurantApp';
 import EmotionApp from "./EmotionApp";
 import GithubApp from './GithubApp';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from "react-router-dom";
 
 ReactDOM.render(
     // 1. html element
@@ -30,9 +32,13 @@ ReactDOM.render(
     //     <li>Tuesday</li>
     // </ul>,
     // 4. component
+
     // <RestaurantApp />,
     // <EmotionApp authorized = {false} />,
-    <GithubApp login = "funfun0737" />,
+    // <GithubApp login = "funfun0737" />,
+    <Router>
+        <App />
+    </Router>,
     // where we want to put it
     document.getElementById('root')
 );

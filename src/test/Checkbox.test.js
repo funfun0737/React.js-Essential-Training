@@ -1,5 +1,5 @@
 import {render, fireEvent} from "@testing-library/react";
-import {Checkbox} from "./Checkbox";
+import {Checkbox} from "../Checkbox";
 import React from "react";
 
 test("Selecting checkbox", () => {
